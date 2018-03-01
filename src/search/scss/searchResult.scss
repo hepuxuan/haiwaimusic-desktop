@@ -1,0 +1,37 @@
+@import '../../variables';
+
+.title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #808080;
+  font-size: 12px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.misicIcon {
+  i {
+    font-size: 32px;
+  }
+  margin-right: 12px;
+}
+
+.innerBox {
+  display: flex;
+  align-items: center;
+}
+
+.likeButton {
+  font-size: 18px;
+}
+
+.isActive {
+  color: $primary-color;
+}

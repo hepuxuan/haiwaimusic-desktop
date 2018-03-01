@@ -1,0 +1,36 @@
+.searchRoot {
+  background-color: #f4f4f4;
+}
+
+.searchInput {
+  display: block;
+  width: calc(100% - 20px);
+  margin: auto;
+  border-radius: 3px;
+  background: #fff;
+  height: 36px;
+  appearance: none;
+  border: none;
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 1044px;
+  margin: auto;
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  i {
+    font-size: 26px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+.searchForm {
+  padding: 10px 0 10px 0;
+}

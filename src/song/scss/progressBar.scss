@@ -1,0 +1,59 @@
+@import '../../variables';
+
+.playerStats {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.time {
+  width: 15%;
+  color: $grey-200;
+  font-size: 12px;
+  text-align: center;
+}
+
+.progressBar {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.background, .progress {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.slideRoot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+  top: -24px;
+  left: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: $primary-color;
+}
+
+.progress {
+  top: -1px;
+  background-color: $primary-color;
+  height: 4px;
+}
+
+.background {
+  top: 0;
+  background-color: #ccc;
+  height: 2px;
+}

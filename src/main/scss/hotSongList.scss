@@ -1,0 +1,84 @@
+@import '../../variables';
+
+.hotSongs {
+  font-size: 16px;
+  padding: 12px 10px 0 10px;
+  a {
+    font-size: 14px;
+    padding-left: 0;
+  }
+  > div {
+    padding: 8px 0 8px 0;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+@media(max-width: 899px) {
+  .srollable {
+    overflow: auto;
+    white-space: nowrap;
+    > div {
+      display: inline-block;
+      width: 27%;
+      margin-right: 6px;
+    }
+  }
+}
+
+@media(min-width: 900px) {
+  .title {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin: 12px 0;
+  }
+  .srollable {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 20%;
+      padding: 0 8px 12px 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+}
+.imageBox > div {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;;
+}
+.imageBox:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+  background-color: $grey-200;
+}
+
+.singerName {
+  font-size: 12px;
+  color: $grey-500;
+}
+
+.songName, .singerName {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media(min-width: 900px) {
+  .songName, .singerName {
+    padding: 6px 0 0; 
+  }
+}

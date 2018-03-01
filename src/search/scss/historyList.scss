@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.searchHistory {
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 10px 0 10px;
+  max-width: $page-width;
+  margin: auto;
+  button {
+    font-size: 14px;
+    padding-left: 0;
+  }
+  > div {
+    padding: 8px 0 8px 0;
+  }
+  > div:not(:last-child) {
+    border-bottom: solid 1px #ccc;
+  }
+  .closeButton {
+    text-align: center;
+    width: 100%;
+  }
+}

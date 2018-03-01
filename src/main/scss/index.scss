@@ -1,0 +1,39 @@
+@import '../../variables';
+@import '../../base';
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  > div {
+    margin: 0 10px 0 10px;
+  }
+}
+
+.activeTab {
+  color: $primary-color;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 12px;
+  letter-spacing: 6px;
+  padding: 8px 0 8px 0;
+}
+
+@media(min-width: 900px) {
+  .tabs button {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin: 12px 0;
+  }
+}
+
+.emptyList {
+  text-align: center;
+  a {
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.searchitems {
+  max-width: $page-width;
+  margin: 18px auto;
+}
+
+.searchItem {
+  padding: 8px 8px 28px 0;
+}
+
+@media (max-width: 800px) {
+  .searchitems {
+    margin-top: 0;
+    > div:not(:last-child) {
+      border-bottom: solid 1px #ccc;
+    }
+  }
+  .searchItem {
+    padding-bottom: 8px;
+  }
+}
